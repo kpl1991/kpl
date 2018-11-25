@@ -1,7 +1,7 @@
 package cn.kpl.service.impl;
 
 import cn.kpl.mapper.UserMapper;
-import cn.kpl.model.User;
+import cn.kpl.model.SysUserModel;
 import cn.kpl.service.UserService;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
     @Resource
     private UserMapper userMapper;
 
-    public List<User> findUser(Map<String,String> filter){
+    public List<SysUserModel> findUser(Map<String,String> filter){
         return userMapper.findUser(filter);
     }
 

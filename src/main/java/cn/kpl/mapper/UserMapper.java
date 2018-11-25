@@ -1,6 +1,6 @@
 package cn.kpl.mapper;
 
-import cn.kpl.model.User;
+import cn.kpl.model.SysUserModel;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -9,5 +9,5 @@ import java.util.Map;
 @Mapper
 public interface UserMapper {
 
-    List<User> findUser(Map<String,String> filter);
+    List<SysUserModel> findUser(Map<String,String> filter);
 }

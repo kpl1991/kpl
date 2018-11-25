@@ -2,7 +2,7 @@ package cn.kpl.model;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+public class SysUserModel implements Serializable {
 
     private String userId;
     private String userNm;
