@@ -2,6 +2,9 @@ server:
   port: 8088
 
 spring:
+  profiles:
+    active: dev
+
   datasource:
     name: kpl
     url: jdbc:mysql://127.0.0.1:3306/kpl?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
@@ -14,3 +17,5 @@ mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml  #注意：一定要对应mapper映射xml文件的所在路径
   type-aliases-package: cn.kpl.model  # 注意：对应实体类的路径
 
+logging:
+  config: classpath:logback-spring.xml
