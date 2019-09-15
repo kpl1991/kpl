@@ -36,7 +36,7 @@ public class UploadController {
                 fis = new FileInputStream(file);
                 bis = new BufferedInputStream(fis);
                 OutputStream os = response.getOutputStream();
-                Integer len;
+                int len = 0;
                 System.out.println(file.length());
                 while ((len =  bis.read(buffer)) != -1) {
                     os.write(buffer, 0, len);

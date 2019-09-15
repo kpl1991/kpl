@@ -17,7 +17,7 @@ public class Home {
     @RequestMapping("/")
     public String welcome(HttpServletRequest request, HttpServletResponse response) {
         String remoteAddr = request.getRemoteAddr();
-        int port = request.getRemotePort();
+        Integer port = request.getRemotePort();
 
         logger.info("request from: " + remoteAddr + ":" + port);
 
